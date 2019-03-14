@@ -1,0 +1,54 @@
+slots:
+  product:
+    type: text
+  brand:
+    type: text
+   
+entities:
+- product
+- brand
+
+intents:
+ - greet
+ - affirm
+ - deny
+ - goodbye
+ - thankyou
+ - restaurant_search
+ - restaurant_description
+
+
+templates:
+  utter_greet:
+    - "hey there! How may i help you"
+    - "Hi, How can I help you!"
+    - "Hey, How is it going. How May I help you Today"
+  utter_affirm:
+    - "Do you want me to locate it in this store 1375?"
+  utter_goodbye:
+    - "goodbye :("
+    - "Bye-bye"
+  utter_default:
+    - "default message"
+  utter_ask_brand: 
+    - text: "what brand  are you looking for ?"
+  utter_ask_howcanhelp:
+    - "how can I help you?"
+  utter_ask_product:
+    - "Where is this Item?"
+  utter_ask_email:
+    - "can you please help me with your email id?"
+    - "please provide your email id"
+    - "To what email id should I send it to?"
+
+
+actions:
+- utter_greet
+- utter_goodbye
+- utter_default
+- utter_ask_howcanhelp
+- utter_ask_product
+- utter_ask_brand
+- actions.ActionSearchRestaurants
+- actions.ActionSearchDescription
+- utter_affirm
