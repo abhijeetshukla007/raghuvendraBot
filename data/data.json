@@ -1,0 +1,1440 @@
+{
+  "rasa_nlu_data": {
+    "regex_features": [
+      {
+        "name": "zipcode",
+        "pattern": "[0-9]{5}"
+      },
+      {
+        "name": "greet",
+        "pattern": "hey[^\\s]*"
+      },
+      {
+        "name": "email",
+        "pattern": "[a-zA-Z0-9_.+]+@[a-zA-Z]+[.][a-zA-Z0-9-.]+$"
+      },
+      {
+        "name": "email",
+        "pattern": "<mailto:[a-zA-Z0-9_.+]+@[a-zA-Z]+[.][a-zA-Z0-9-.]+>$"
+      }
+    ],
+    "entity_synonyms": [
+      {
+        "value": "chinese",
+        "synonyms": [
+          "Chinese",
+          "Chines",
+          "chines"
+        ]
+      },
+      {
+        "value": "vegetarian",
+        "synonyms": [
+          "veggie",
+          "vegg"
+        ]
+      }
+    ],
+    "common_examples": [
+      {
+        "text": "hey",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "howdy",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hey there",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hello",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hi",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "good morning",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "dear sir",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "yes",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "yep",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "yeah",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "indeed",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "that's right",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "ok",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "great",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "right, thank you",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "correct",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "great choice",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "sounds really good",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "bye",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "goodbye",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "good bye",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "stop",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "end",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "farewell",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "Bye bye",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "have a good one",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "??",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hey there",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "i have rats running in my stomach",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "please tell me about iphone",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 21,
+            "end": 27,
+            "value": "iphone",
+            "entity": "product"
+          }
+        ]
+      },
+      {
+        "text": "can you help me with more information on baby daipers",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 41,
+            "end": 53,
+            "value": "baby daipers",
+            "entity": "product"
+          }
+        ]
+      },
+      {
+        "text": "can you tell me about available televisions?",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 32,
+            "end": 43,
+            "value": "televisions",
+            "entity": "product"
+          }
+        ]
+      },
+      {
+        "text": "I want to buy baby diaper. Could you please tell me more about it",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 19,
+            "end": 25,
+            "value": "diaper",
+            "entity": "product"
+          }
+        ]
+      },
+      {
+        "text": "tell me more about up and up thermometer",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 19,
+            "end": 28,
+            "value": "up and up",
+            "entity": "brand"
+          },
+          {
+            "start": 29,
+            "end": 40,
+            "value": "thermometer",
+            "entity": "product"
+          }
+        ]
+      },
+      {
+        "text": "where can i find samsung s6 ",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 25,
+            "end": 27,
+            "value": "s6",
+            "entity": "product"
+          },
+          {
+            "start": 17,
+            "end": 24,
+            "value": "samsung",
+            "entity": "brand"
+          }
+        ]
+      },
+      {
+        "text": "Could you find me bananas",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 18,
+            "end": 25,
+            "value": "bananas",
+            "entity": "product"
+          }
+        ]
+      },
+      {
+        "text": "find me a chair",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 10,
+            "end": 15,
+            "value": "chair",
+            "entity": "product"
+          }
+        ]
+      },
+      {
+        "text": "can i find security cameras in target?",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 20,
+            "end": 27,
+            "value": "cameras",
+            "entity": "product"
+          }
+        ]
+      },
+      {
+        "text": "how safe is burglar detector?",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 12,
+            "end": 28,
+            "value": "burglar detector",
+            "entity": "product"
+          }
+        ]
+      },
+      {
+        "text": "are there smart locks online?",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 10,
+            "end": 21,
+            "value": "smart locks",
+            "entity": "product"
+          }
+        ]
+      },
+      {
+        "text": "what are the deals in iphone xs",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 22,
+            "end": 28,
+            "value": "iphone",
+            "entity": "brand"
+          },
+          {
+            "start": 29,
+            "end": 31,
+            "value": "xs",
+            "entity": "product"
+          }
+        ]
+      },
+      {
+        "text": "find me paper towels ",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 8,
+            "end": 21,
+            "value": "paper towels ",
+            "entity": "product"
+          }
+        ]
+      },
+      {
+        "text": "what are the napkin brands available",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 13,
+            "end": 19,
+            "value": "napkin",
+            "entity": "product"
+          }
+        ]
+      },
+      {
+        "text": "locate me lavendar fragrance air freshener",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 10,
+            "end": 18,
+            "value": "lavendar",
+            "entity": "brand"
+          },
+          {
+            "start": 28,
+            "end": 42,
+            "value": " air freshener",
+            "entity": "product"
+          }
+        ]
+      },
+      {
+        "text": "What is the price range of air fresheners",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 27,
+            "end": 41,
+            "value": "air fresheners",
+            "entity": "product"
+          }
+        ]
+      },
+      {
+        "text": "can i find domyos trampoline",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 18,
+            "end": 28,
+            "value": "trampoline",
+            "entity": "product"
+          },
+          {
+            "start": 11,
+            "end": 17,
+            "value": "domyos",
+            "entity": "brand"
+          }
+        ]
+      },
+      {
+        "text": "are there trampolines here",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 10,
+            "end": 21,
+            "value": "trampolines",
+            "entity": "product"
+          }
+        ]
+      },
+      {
+        "text": "can i find trampolines for kids",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 11,
+            "end": 22,
+            "value": "trampolines",
+            "entity": "product"
+          }
+        ]
+      },
+      {
+        "text": "what is the price of apple iphone xs max",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 21,
+            "end": 26,
+            "value": "apple",
+            "entity": "brand"
+          },
+          {
+            "start": 27,
+            "end": 40,
+            "value": "iphone xs max",
+            "entity": "product"
+          }
+        ]
+      },
+      {
+        "text": "are there apple certified phones",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 16,
+            "end": 32,
+            "value": "certified phones",
+            "entity": "product"
+          },
+          {
+            "start": 10,
+            "end": 15,
+            "value": "apple",
+            "entity": "brand"
+          }
+        ]
+      },
+      {
+        "text": "find me shout liquid refill",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 8,
+            "end": 13,
+            "value": "shout",
+            "entity": "brand"
+          },
+          {
+            "start": 14,
+            "end": 27,
+            "value": "liquid refill",
+            "entity": "product"
+          }
+        ]
+      },
+      {
+        "text": "find me sandisk memory cards",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 8,
+            "end": 15,
+            "value": "sandisk",
+            "entity": "brand"
+          },
+          {
+            "start": 16,
+            "end": 28,
+            "value": "memory cards",
+            "entity": "product"
+          }
+        ]
+      },
+      {
+        "text": "tell me about tripods ",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 14,
+            "end": 21,
+            "value": "tripods",
+            "entity": "product"
+          }
+        ]
+      },
+      {
+        "text": "find me sling bags",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 8,
+            "end": 18,
+            "value": "sling bags",
+            "entity": "product"
+          }
+        ]
+      },
+      {
+        "text": "what are the brands in backpacks ",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 23,
+            "end": 32,
+            "value": "backpacks",
+            "entity": "product"
+          }
+        ]
+      },
+      {
+        "text": "what is the price of canon cameras",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 21,
+            "end": 26,
+            "value": "canon",
+            "entity": "brand"
+          },
+          {
+            "start": 27,
+            "end": 34,
+            "value": "cameras",
+            "entity": "product"
+          }
+        ]
+      },
+      {
+        "text": "find me toys",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 8,
+            "end": 12,
+            "value": "toys",
+            "entity": "product"
+          }
+        ]
+      },
+      {
+        "text": "what are 4k tvs",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 9,
+            "end": 15,
+            "value": "4k tvs",
+            "entity": "product"
+          }
+        ]
+      },
+      {
+        "text": "what are the variations in sony blu ray players",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 27,
+            "end": 31,
+            "value": "sony",
+            "entity": "brand"
+          },
+          {
+            "start": 32,
+            "end": 47,
+            "value": "blu ray players",
+            "entity": "product"
+          }
+        ]
+      },
+      {
+        "text": "where can i find samsung television",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 17,
+            "end": 24,
+            "value": "samsung",
+            "entity": "brand"
+          }
+        ]
+      },
+      {
+        "text": "what are the health benefits of fitbit versa",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 32,
+            "end": 38,
+            "value": "fitbit",
+            "entity": "brand"
+          },
+          {
+            "start": 39,
+            "end": 44,
+            "value": "versa",
+            "entity": "product"
+          }
+        ]
+      },
+      {
+        "text": "find me multi purpose cleaners",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 8,
+            "end": 30,
+            "value": "multi purpose cleaners",
+            "entity": "product"
+          }
+        ]
+      },
+      {
+        "text": "tell me about dishwashing liquids",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 14,
+            "end": 33,
+            "value": "dishwashing liquids",
+            "entity": "product"
+          }
+        ]
+      },
+      {
+        "text": "where is the tv section",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 13,
+            "end": 15,
+            "value": "tv",
+            "entity": "product"
+          }
+        ]
+      },
+      {
+        "text": "what is the price of a 24\" led hdtv lg",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 36,
+            "end": 38,
+            "value": "lg",
+            "entity": "brand"
+          },
+          {
+            "start": 31,
+            "end": 35,
+            "value": "hdtv",
+            "entity": "product"
+          }
+        ]
+      },
+      {
+        "text": "give me the specifications of vizio series tv",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 30,
+            "end": 42,
+            "value": "vizio series",
+            "entity": "brand"
+          },
+          {
+            "start": 43,
+            "end": 45,
+            "value": "tv",
+            "entity": "product"
+          }
+        ]
+      },
+      {
+        "text": "where is the smart led tv section",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 13,
+            "end": 24,
+            "value": "smart led t",
+            "entity": "product"
+          }
+        ]
+      },
+      {
+        "text": "can i know about samsung smart tvs",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 17,
+            "end": 24,
+            "value": "samsung",
+            "entity": "brand"
+          },
+          {
+            "start": 25,
+            "end": 34,
+            "value": "smart tvs",
+            "entity": "product"
+          }
+        ]
+      },
+      {
+        "text": "describe iphone",
+        "intent": "restaurant_description",
+        "entities": [
+          {
+            "start": 9,
+            "end": 15,
+            "value": "iphone",
+            "entity": "product"
+          }
+        ]
+      },
+      {
+        "text": "tell me more about canon camera",
+        "intent": "restaurant_description",
+        "entities": [
+          {
+            "start": 25,
+            "end": 31,
+            "value": "camera",
+            "entity": "product"
+          },
+          {
+            "start": 19,
+            "end": 24,
+            "value": "canon",
+            "entity": "brand"
+          }
+        ]
+      },
+      {
+        "text": "tell me more about iphoneX",
+        "intent": "restaurant_description",
+        "entities": [
+          {
+            "start": 19,
+            "end": 26,
+            "value": "iphoneX",
+            "entity": "product"
+          }
+        ]
+      },
+      {
+        "text": "can you please tell more about iphoneX",
+        "intent": "restaurant_description",
+        "entities": [
+          {
+            "start": 31,
+            "end": 38,
+            "value": "iphoneX",
+            "entity": "product"
+          }
+        ]
+      },
+      {
+        "text": "tell me more about samsung smart tv",
+        "intent": "restaurant_description",
+        "entities": [
+          {
+            "start": 19,
+            "end": 27,
+            "value": "samsung ",
+            "entity": "brand"
+          },
+          {
+            "start": 27,
+            "end": 35,
+            "value": "smart tv",
+            "entity": "product"
+          }
+        ]
+      },
+      {
+        "text": "could you please tell me about iphoneX",
+        "intent": "restaurant_description",
+        "entities": [
+          {
+            "start": 31,
+            "end": 38,
+            "value": "iphoneX",
+            "entity": "product"
+          }
+        ]
+      },
+      {
+        "text": "Describe samsung smarttv",
+        "intent": "restaurant_description",
+        "entities": [
+          {
+            "start": 9,
+            "end": 17,
+            "value": "samsung ",
+            "entity": "brand"
+          },
+          {
+            "start": 17,
+            "end": 24,
+            "value": "smarttv",
+            "entity": "product"
+          }
+        ]
+      },
+      {
+        "text": "tell me more about up and up baby diapers",
+        "intent": "restaurant_description",
+        "entities": [
+          {
+            "start": 34,
+            "end": 41,
+            "value": "diapers",
+            "entity": "product"
+          },
+          {
+            "start": 19,
+            "end": 28,
+            "value": "up and up",
+            "entity": "brand"
+          }
+        ]
+      },
+      {
+        "text": "Can you tell me about amazon firestick",
+        "intent": "restaurant_description",
+        "entities": [
+          {
+            "start": 22,
+            "end": 29,
+            "value": "amazon",
+            "entity": "brand"
+          },
+          {
+            "start": 29,
+            "end": 38,
+            "value": "firestick",
+            "entity": "product"
+          }
+        ]
+      },
+      {
+        "text": "Tell me more about amazon firestick",
+        "intent": "restaurant_description",
+        "entities": [
+          {
+            "start": 19,
+            "end": 25,
+            "value": "amazon",
+            "entity": "brand"
+          },
+          {
+            "start": 26,
+            "end": 35,
+            "value": "firestick",
+            "entity": "product"
+          }
+        ]
+      },
+      {
+        "text": "please describe amazon firestick",
+        "intent": "restaurant_description",
+        "entities": [
+          {
+            "start": 16,
+            "end": 22,
+            "value": "amazon",
+            "entity": "brand"
+          },
+          {
+            "start": 23,
+            "end": 32,
+            "value": "firestick",
+            "entity": "product"
+          }
+        ]
+      },
+      {
+        "text": "I am looking for a iphoneX. Could you please tell me more about it?",
+        "intent": "",
+        "entities": [
+          {
+            "start": 19,
+            "end": 26,
+            "value": "iphoneX",
+            "entity": "product"
+          },
+          {
+            "start": 19,
+            "end": 26,
+            "value": "apple",
+            "entity": "brand"
+          }
+        ]
+      },
+      {
+        "text": "Tell me about green apple",
+        "intent": "restaurant_description",
+        "entities": [
+          {
+            "start": 14,
+            "end": 25,
+            "value": "green apple",
+            "entity": "product"
+          }
+        ]
+      },
+      {
+        "text": "tell me about iphonex",
+        "intent": "restaurant_description",
+        "entities": [
+          {
+            "start": 14,
+            "end": 21,
+            "value": "iphonex",
+            "entity": "product"
+          }
+        ]
+      },
+      {
+        "text": "tell me about pampers diapers",
+        "intent": "restaurant_description",
+        "entities": [
+          {
+            "start": 14,
+            "end": 21,
+            "value": "pampers",
+            "entity": "brand"
+          },
+          {
+            "start": 22,
+            "end": 29,
+            "value": "diapers",
+            "entity": "product"
+          }
+        ]
+      },
+      {
+        "text": "tell me about sony tv",
+        "intent": "restaurant_description",
+        "entities": [
+          {
+            "start": 19,
+            "end": 21,
+            "value": "tv",
+            "entity": "product"
+          },
+          {
+            "start": 14,
+            "end": 19,
+            "value": "sony ",
+            "entity": "brand"
+          }
+        ]
+      },
+      {
+        "text": "tell me about soft toys",
+        "intent": "restaurant_description",
+        "entities": [
+          {
+            "start": 14,
+            "end": 23,
+            "value": "soft toys",
+            "entity": "product"
+          }
+        ]
+      },
+      {
+        "text": "describe iphonex",
+        "intent": "restaurant_description",
+        "entities": [
+          {
+            "start": 9,
+            "end": 16,
+            "value": "iphonex",
+            "entity": "product"
+          }
+        ]
+      },
+      {
+        "text": "describe green apple",
+        "intent": "restaurant_description",
+        "entities": [
+          {
+            "start": 9,
+            "end": 20,
+            "value": "green apple",
+            "entity": "product"
+          }
+        ]
+      },
+      {
+        "text": "describe pamper diapers",
+        "intent": "restaurant_description",
+        "entities": [
+          {
+            "start": 16,
+            "end": 23,
+            "value": "diapers",
+            "entity": "product"
+          },
+          {
+            "start": 9,
+            "end": 16,
+            "value": "pamper ",
+            "entity": "brand"
+          }
+        ]
+      },
+      {
+        "text": "describe soft toys",
+        "intent": "restaurant_description",
+        "entities": [
+          {
+            "start": 9,
+            "end": 18,
+            "value": "soft toys",
+            "entity": "product"
+          }
+        ]
+      },
+      {
+        "text": "describe sony tv",
+        "intent": "restaurant_description",
+        "entities": [
+          {
+            "start": 14,
+            "end": 16,
+            "value": "tv",
+            "entity": "product"
+          },
+          {
+            "start": 9,
+            "end": 13,
+            "value": "sony",
+            "entity": "brand"
+          }
+        ]
+      },
+      {
+        "text": "where can i find iphonex",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 17,
+            "end": 24,
+            "value": "iphonex",
+            "entity": "product"
+          }
+        ]
+      },
+      {
+        "text": "where can i find green apple",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 17,
+            "end": 28,
+            "value": "green apple",
+            "entity": "product"
+          }
+        ]
+      },
+      {
+        "text": "where can i find pamper diapers",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 17,
+            "end": 24,
+            "value": "pamper ",
+            "entity": "brand"
+          },
+          {
+            "start": 24,
+            "end": 31,
+            "value": "diapers",
+            "entity": "product"
+          }
+        ]
+      },
+      {
+        "text": "where can i find soft toys",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 17,
+            "end": 26,
+            "value": "soft toys",
+            "entity": "product"
+          }
+        ]
+      },
+      {
+        "text": "where can i find sony tv",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 22,
+            "end": 24,
+            "value": "tv",
+            "entity": "product"
+          },
+          {
+            "start": 17,
+            "end": 22,
+            "value": "sony ",
+            "entity": "brand"
+          }
+        ]
+      },
+      {
+        "text": "locate iphonex for me",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 7,
+            "end": 15,
+            "value": "iphonex ",
+            "entity": "product"
+          }
+        ]
+      },
+      {
+        "text": "locate green apple for me ",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 7,
+            "end": 18,
+            "value": "green apple",
+            "entity": "product"
+          }
+        ]
+      },
+      {
+        "text": "locate pamper diapers for me",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 7,
+            "end": 14,
+            "value": "pamper ",
+            "entity": "brand"
+          },
+          {
+            "start": 14,
+            "end": 22,
+            "value": "diapers ",
+            "entity": "product"
+          }
+        ]
+      },
+      {
+        "text": "locate soft toys for me",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 7,
+            "end": 16,
+            "value": "soft toys",
+            "entity": "product"
+          }
+        ]
+      },
+      {
+        "text": "locate sony tv for me",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 7,
+            "end": 11,
+            "value": "sony",
+            "entity": "brand"
+          },
+          {
+            "start": 12,
+            "end": 15,
+            "value": "tv ",
+            "entity": "product"
+          }
+        ]
+      },
+      {
+        "text": "where is iphonex",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 9,
+            "end": 16,
+            "value": "iphonex",
+            "entity": "product"
+          }
+        ]
+      },
+      {
+        "text": "where is green apple",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 9,
+            "end": 20,
+            "value": "green apple",
+            "entity": "product"
+          }
+        ]
+      },
+      {
+        "text": "where is pamper diapers",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 9,
+            "end": 16,
+            "value": "pamper ",
+            "entity": "brand"
+          },
+          {
+            "start": 16,
+            "end": 23,
+            "value": "diapers",
+            "entity": "product"
+          }
+        ]
+      },
+      {
+        "text": "where can i find soft toys",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 17,
+            "end": 26,
+            "value": "soft toys",
+            "entity": "product"
+          }
+        ]
+      },
+      {
+        "text": "where can i find sony tv",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 17,
+            "end": 21,
+            "value": "sony",
+            "entity": "brand"
+          },
+          {
+            "start": 22,
+            "end": 24,
+            "value": "tv",
+            "entity": "product"
+          }
+        ]
+      },
+      {
+        "text": "tell me more about iphonex",
+        "intent": "restaurant_description",
+        "entities": [
+          {
+            "start": 19,
+            "end": 26,
+            "value": "iphonex",
+            "entity": "product"
+          }
+        ]
+      },
+      {
+        "text": "tell me more about green apple",
+        "intent": "restaurant_description",
+        "entities": [
+          {
+            "start": 19,
+            "end": 30,
+            "value": "green apple",
+            "entity": "product"
+          }
+        ]
+      },
+      {
+        "text": "tell me more about pamper diapers",
+        "intent": "restaurant_description",
+        "entities": [
+          {
+            "start": 19,
+            "end": 25,
+            "value": "pamper",
+            "entity": "brand"
+          },
+          {
+            "start": 26,
+            "end": 33,
+            "value": "diapers",
+            "entity": "product"
+          }
+        ]
+      },
+      {
+        "text": "tell me more about soft toys",
+        "intent": "restaurant_description",
+        "entities": [
+          {
+            "start": 19,
+            "end": 28,
+            "value": "soft toys",
+            "entity": "product"
+          }
+        ]
+      },
+      {
+        "text": "tell me more about sony tv",
+        "intent": "restaurant_description",
+        "entities": [
+          {
+            "start": 19,
+            "end": 23,
+            "value": "sony",
+            "entity": "brand"
+          },
+          {
+            "start": 24,
+            "end": 26,
+            "value": "tv",
+            "entity": "product"
+          }
+        ]
+      },
+      {
+        "text": "search green apple",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 7,
+            "end": 18,
+            "value": "green apple",
+            "entity": "product"
+          }
+        ]
+      },
+      {
+        "text": "search iphonex",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 7,
+            "end": 14,
+            "value": "iphonex",
+            "entity": "product"
+          }
+        ]
+      },
+      {
+        "text": "search soft toys",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 7,
+            "end": 16,
+            "value": "soft toys",
+            "entity": "product"
+          }
+        ]
+      },
+      {
+        "text": "search sony tv",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 12,
+            "end": 14,
+            "value": "tv",
+            "entity": "product"
+          },
+          {
+            "start": 7,
+            "end": 11,
+            "value": "sony",
+            "entity": "brand"
+          }
+        ]
+      },
+      {
+        "text": "search pamper diapers",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 7,
+            "end": 13,
+            "value": "pamper",
+            "entity": "brand"
+          },
+          {
+            "start": 14,
+            "end": 21,
+            "value": "diapers",
+            "entity": "product"
+          }
+        ]
+      }
+    ]
+  }
+}
