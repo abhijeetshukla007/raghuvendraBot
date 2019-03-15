@@ -49,6 +49,6 @@ actions:
 - utter_ask_howcanhelp
 - utter_ask_product
 - utter_ask_brand
-- actions.ActionSearchRestaurants
-- actions.ActionSearchDescription
+- action_restaurant
+- action_description
 - utter_affirm
